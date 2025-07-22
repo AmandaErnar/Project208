@@ -4,38 +4,34 @@
     <title>Project 208</title>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel='stylesheet' href='src/style.css'>
   </head>
   <body>
-    <aside id='sidebar'>
-      <nav>
-        <div>
-          <a href='#'>Project 208</a>
+
+    <header class='main-header'>
+      <div class='header-content'>
+        <a href='#' class='logo'>Project 208</a>
+        <nav class='main-nav'>
+          <ul>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#team'>Team</a></li>
+            <li><a href='#donate'>Donate</a></li>
+            <li><a href='#order'>Order Pamphlets</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id='hero' class='hero-section'>
+        <div class='hero-content'>
+          <h1>Empowering rural students through STEM education.</h1>
+          <h3>This is Project 208.</h3>
         </div>
-        <ul>
-          <li><a href='#about'>About</a></li>
-          <li><a href='#team'>Team</a></li>
-          <li><a href='#donate'>Donate</a></li>
-          <li><a href='#order'>Order Pamphlets</a></li>
-        </ul>
-      </nav>
-    </aside>
+        <div class="hero-background"></div> </section>
 
-    <div id='page-content'>
-      <header>
-        <h1>Empowering rural students through STEM education.</h1>
-        <h3>This is Project 208.</h3>
-      </header>
-
-      <main>
-        <section id='hero' class='hero-section'>
-          <div>
-            <h1>Empowering rural students through STEM education.</h1>
-            <h3>This is Project 208.</h3>
-          </div>
-        </section>
-
-        <section id='about'>
+      <section id='about' class='content-section'>
+        <div class='section-inner'>
           <h2>About Project 208</h2>
           <p>
             Project 208 is dedicated to bridging the educational gap in underprivileged rural communities by providing accessible and engaging STEM learning opportunities. We believe that every young mind, regardless of their location or background, deserves the chance to explore the wonders of science, technology, engineering, and mathematics.
@@ -43,63 +39,88 @@
           <p>
             Our focus is on equipping young girls with practical skills, fostering innovation, and inspiring them to become problem-solvers in their own communities. Through hands-on projects like building wind turbines and generators, we aim to ignite a lifelong passion for STEM and empower the next generation of rural innovators.
           </p>
-        </section>
+        </div>
+      </section>
 
-        <section id='team'>
+      <section id='team' class='content-section'>
+        <div class='section-inner'>
           <h2>Our Team</h2>
           <div class='grid-container'>
             <div class='team-member-card'>
-              <img src='https://placehold.co/150x150/455d73/fffff0?text=Team+Member+1' alt='Team Member 1'>
+              <img src='https://placehold.co/150x150/f0f0f0/333333?text=Team+Member+1' alt='Team Member 1'>
               <h3>Jane Doe</h3>
               <p>Founder & STEM Educator</p>
             </div>
             <div class='team-member-card'>
-              <img src='https://placehold.co/150x150/455d73/fffff0?text=Team+Member+2' alt='Team Member 2'>
+              <img src='https://placehold.co/150x150/f0f0f0/333333?text=Team+Member+2' alt='Team Member 2'>
               <h3>John Smith</h3>
               <p>Curriculum Developer</p>
             </div>
             <div class='team-member-card'>
-              <img src='https://placehold.co/150x150/455d73/fffff0?text=Team+Member+3' alt='Team Member 3'>
+              <img src='https://placehold.co/150x150/f0f0f0/333333?text=Team+Member+3' alt='Team Member 3'>
               <h3>Emily White</h3>
               <p>Community Outreach Lead</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section id='order'>
+      <section id='order' class='cta-section'>
+        <div class='section-inner'>
           <h2>Order Pamphlets</h2>
           <p>
             Our 'Build & Empower' pamphlet series provides comprehensive, easy-to-follow instructions for various STEM projects. Order your copies today to bring hands-on learning to your community!
           </p>
-          <button>
+          <button class='primary-button'>
             Order Pamphlets Now
           </button>
-        </section>
+        </div>
+      </section>
 
-        <section id='donate'>
+      <section id='donate' class='cta-section'>
+        <div class='section-inner'>
           <h2>Support Our Mission</h2>
           <p>
             Your contribution helps us print and distribute more pamphlets, reach more girls, and expand our initiatives to empower rural communities through STEM education. Every donation makes a difference!
           </p>
-          <button>
+          <button class='primary-button'>
             Donate Today
           </button>
-        </section>
-      </main>
-
-      <footer>
-        <div>
-          <nav>
-            <ul>
-              <li><a href='#about'>About</a></li>
-              <li><a href='#team'>Team</a></li>
-              <li><a href='#donate'>Donate</a></li>
-              <li><a href='#order'>Order Pamphlets</a></li>
-            </ul>
-          </nav>
-          <p>&copy; 2025 Project 208. All rights reserved.</p>
         </div>
-      </footer>
-    </div>
-  </body>
-</html>
+      </section>
+    </main>
+
+    <footer class='main-footer'>
+      <div class='footer-content'>
+        <p>&copy; 2025 Project 208. All rights reserved.</p>
+        <nav class='footer-nav'>
+          <ul>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#team'>Team</a></li>
+            <li><a href='#donate'>Donate</a></li>
+            <li><a href='#order'>Order Pamphlets</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section');
+
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('reveal');
+              // Optionally unobserve if you only want the animation to happen once
+              // observer.unobserve(entry.target);
+            } else {
+                entry.target.classList.remove('reveal'); // To reset on scroll out
+            }
+          });

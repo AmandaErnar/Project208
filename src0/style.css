@@ -117,16 +117,19 @@ p {
 }
 
 .hero-section {
-  background-image: url('https://placehold.co/1200x600/455d73');
+  background-image: url('https://placehold.co/1200x200/B5D3F7');
   background-size: cover;
   background-position: center;
-  padding: 6.25rem 1.25rem;
+  min-height: 10rem; /* Adjusted for smaller visual break */
+  padding: 0; /* Removed padding as min-height controls size */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hero-section div {
+  /* This div is now effectively removed from the HTML,
+     but keeping its styles here for reference if content is added back */
   max-width: 43.75rem;
   margin: 0 auto;
   background-color: rgba(181, 211, 247, 0.8);
@@ -225,72 +228,4 @@ footer nav ul {
   }
 
   header h1 {
-    font-size: 3.5em;
-  }
-
-  header h3 {
-    font-size: 1.5em;
-  }
-
-  .hero-section {
-    padding: 9.375rem 1.25rem;
-  }
-
-  h1 {
-    font-size: 3.5em;
-  }
-
-  h3 {
-    font-size: 1.8em;
-  }
-
-  section {
-    padding: 5rem 1.25rem;
-  }
-
-  h2 {
-    font-size: 3em;
-  }
-
-  #team .grid-container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 64rem) {
-  header {
-    padding: 2.5rem;
-  }
-
-  header h1 {
-    font-size: 4em;
-  }
-
-  header h3 {
-    font-size: 2em;
-  }
-
-  .hero-section {
-    padding: 12.5rem 1.25rem;
-  }
-
-  h1 {
-    font-size: 4.5em;
-  }
-
-  h3 {
-    font-size: 2.2em;
-  }
-
-  section {
-    padding: 6.25rem 1.25rem;
-  }
-
-  h2 {
-    font-size: 3.5em;
-  }
-
-  #team .grid-container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
+    font-size
