@@ -87,22 +87,23 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://placehold.co/1600x900/455D73/FFFFF0?text=Empowering+Rural+Students'); /* Darker Blue-Gray background */
+  background-image: url('../src/hero/4.jpg'); /* Darker Blue-Gray background */
   background-size: cover;
   background-position: center;
-  filter: brightness(0.8); /* Darken image slightly */
+  filter: brightness(0.25); /* Darken image slightly */
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 900px;
-  padding: 20px;
+  max-width: 80rem;
+  padding: 1rem;
+  text-align: left;
 }
 
 .hero-section h1 {
-  font-size: 4.5em; /* Larger heading */
+  font-size: 7.8rem; /* Larger heading */
   margin-bottom: 20px;
   line-height: 1.1;
   color: #FFFFF0; /* Ivory */
@@ -110,23 +111,89 @@ body {
 }
 
 .hero-section h3 {
-  font-size: 1.8em;
+  font-size: 2rem;
   font-weight: normal;
   color: #FFFFF0; /* Ivory */
   text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
 
-/* General Section Styling */
+#quote {
+  text-align: left;
+  font-size: 3rem;
+  color: #fffff0;
+}
+
+#goal {
+  background-color: #455d73;
+}
+
+#order {
+  background-color: #fe5d26;
+  color: #fffff0;
+}
+
+#order .section-inner p {
+  font-size: 1.5rem;
+}
+
+#order .section-inner h2 {
+  font-size: 3.5rem;
+  color: #fffff0;
+}
+
 .content-section, .cta-section {
-  padding: 80px 0; /* Ample vertical padding */
-  background-color: #B5D3F7; /* Lighter Blue for sections */
-  border-bottom: 1px solid #9ebfe6; /* Subtle separator, derived from lighter blue */
+  padding: 4rem 0; 
+  background-color: #B5D3F7; 
+  border-bottom: 1px solid #455d73; 
   position: relative;
-  overflow: hidden; /* For reveal effect */
+  overflow: hidden; 
+}
+
+.grid-container {
+  display: grid;  
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); 
+  gap: 30px; 
+  margin-top: 40px;
+}
+
+.about-layout {
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: row-reverse; 
+  align-items: flex-start; 
+  gap: 40px; 
+}
+
+.about-featured-image {
+  flex: 0 0 400px; 
+  max-width: 100%; 
+  height: 50rem; 
+  object-fit: cover; 
+}
+
+.about-content {
+  flex: 1; 
+  min-width: 30rem; 
+}
+
+.about-content p {
+  color: #455d73;
+  font-size: 1.5rem;
+}
+
+.about-content h2 {
+    text-align: left; 
+}
+
+.team-member-card {
+  background-color: #DDEBFD; 
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .section-inner {
-  max-width: 900px; /* Content width */
+  max-width: 80rem; /* Content width */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -136,13 +203,216 @@ h2, h3 { /* Apply to both h2 and h3 as per instructions for 'everything else is 
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 4rem;
   margin-bottom: 30px;
   text-align: center;
 }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.8;
+/* Statistics Grid */
+.statistics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 columns, responsive */
+  gap: 40px; /* Space between statistic cards */
+  margin-top: 40px;
+}
+
+.statistic {
+  background-color: #DDEBFD; /* Lighter shade of Lighter Blue */
+  padding: 2rem;
+  text-align: center; /* Center content within each card */
+}
+
+.statistic h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #455D73; /* Darker Blue-Gray */
+}
+
+.statistic p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #455D73; /* Darker Blue-Gray */
+}
+
+.statistic-image {
+  width: 100%; /* Make image fill the card width */
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Cover the area, cropping if necessary */
+  margin-top: 1rem;
+}
+
+.team-member-card img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 20px;
-  color: #455D73; /* Dark
+  border: 2px solid #FE5D26; /* Orange border */
+}
+
+.team-member-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #455D73; /* Darker Blue-Gray */
+}
+
+.team-member-card p {
+  color: #6C7A89; /* A slightly lighter shade of Darker Blue-Gray for sub-text */
+  font-size: 0.95em;
+}
+
+/* Call to Action Sections (Order & Donate) */
+.cta-section {
+  text-align: center;
+  background-color: #B5D3F7; /* Lighter Blue for CTA sections */
+}
+
+.cta-section p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.primary-button {
+  background-color: #FE5D26; /* Orange button */
+  color: #FFFFF0; /* Ivory text on button */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.primary-button:hover {
+  background-color: #FF7F4C; /* A slightly different orange for hover */
+  transform: translateY(-2px);
+}
+
+/* Footer Styling */
+.main-footer {
+  background-color: #455D73; /* Darker Blue-Gray */
+  color: #FFFFF0; /* Ivory */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  color: #FFFFF0; /* Ivory */
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-nav ul li {
+  margin: 0 15px 10px 15px;
+}
+
+.footer-nav ul li a {
+  color: #FE5D26; /* Orange for footer links */
+  text-decoration: none; /* No decoration for links */
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: #FF7F4C; /* A slightly different orange for hover */
+}
+
+/* Section Reveal Animation (Adjusted for horizontal slide) */
+section {
+    opacity: 0; /* Start hidden */
+    transform: translateX(-50px); /* Start slightly off to the left */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.reveal {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav ul li {
+    margin: 8px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-section h3 {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .section-inner {
+    padding: 0 15px;
+  }
+
+  .statistics-grid {
+    grid-template-columns: 1fr; /* Stack on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 2em;
+  }
+
+  .hero-section h3 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .primary-button {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+
+  .footer-nav ul li {
+    margin: 0 10px 8px 10px;
+  }
+}
