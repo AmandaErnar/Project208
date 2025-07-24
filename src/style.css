@@ -1,25 +1,23 @@
-/* Basic Reset & Body Styling */
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern sans-serif */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   scroll-behavior: smooth;
   line-height: 1.6;
-  color: #FFFFF0; /* Ivory for general text */
+  color: #FFFFF0; 
 }
 
 body {
-  display: block; /* No longer using flex for sidebar layout */
-  background-color: #455D73; /* Darker Blue-Gray background */
+  display: block; 
+  background-color: #455D73; 
 }
 
-/* Header Styling */
 .main-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(69, 93, 115, 0.95); /* Slightly transparent Darker Blue-Gray */
+  background-color: rgba(69, 93, 115, 0.95); 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   z-index: 1000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -27,7 +25,7 @@ body {
 }
 
 .main-header.scrolled {
-  background-color: rgba(69, 93, 115, 1); /* Opaque when scrolled */
+  background-color: rgba(69, 93, 115, 1);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,7 +41,7 @@ body {
 .logo {
   font-size: 1.8em;
   font-weight: bold;
-  color: #FFFFF0; /* Ivory for logo */
+  color: #FFFFF0; 
   text-decoration: none;
 }
 
@@ -59,25 +57,24 @@ body {
 }
 
 .main-nav ul li a {
-  color: #FE5D26; /* Orange for links */
-  text-decoration: none; /* No decoration for links */
+  color: #FE5D26; 
+  text-decoration: none; 
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .main-nav ul li a:hover {
-  color: #FFA500; /* A slightly different orange for hover, adjust if needed */
+  color: #FFA500;
 }
 
-/* Hero Section */
 .hero-section {
   position: relative;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #FFFFF0; /* Ivory text for hero */
+  color: #FFFFF0; 
   overflow: hidden;
 }
 
@@ -87,10 +84,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../src/hero/4.jpg'); /* Darker Blue-Gray background */
+  background-image: url('../src/hero/4.jpg'); 
   background-size: cover;
   background-position: center;
-  filter: brightness(0.25); /* Darken image slightly */
+  filter: brightness(0.25); 
   z-index: 1;
 }
 
@@ -103,17 +100,17 @@ body {
 }
 
 .hero-section h1 {
-  font-size: 7.8rem; /* Larger heading */
+  font-size: 7.8rem; 
   margin-bottom: 20px;
   line-height: 1.1;
-  color: #FFFFF0; /* Ivory */
+  color: #FFFFF0;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
 }
 
 .hero-section h3 {
   font-size: 2rem;
   font-weight: normal;
-  color: #FFFFF0; /* Ivory */
+  color: #FFFFF0; 
   text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
 
@@ -193,13 +190,13 @@ body {
 }
 
 .section-inner {
-  max-width: 80rem; /* Content width */
+  max-width: 80rem; 
   margin: 0 auto;
   padding: 0 20px;
 }
 
-h2, h3 { /* Apply to both h2 and h3 as per instructions for 'everything else is lighter blue' */
-  color: #455D73; /* Darker Blue-Gray for headings within sections */
+h2, h3 { 
+  color: #455D73;
 }
 
 h2 {
@@ -208,36 +205,35 @@ h2 {
   text-align: center;
 }
 
-/* Statistics Grid */
 .statistics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 columns, responsive */
-  gap: 40px; /* Space between statistic cards */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 40px; 
   margin-top: 40px;
 }
 
 .statistic {
-  background-color: #DDEBFD; /* Lighter shade of Lighter Blue */
+  background-color: #DDEBFD;
   padding: 2rem;
-  text-align: center; /* Center content within each card */
+  text-align: center; 
 }
 
 .statistic h3 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #455D73; /* Darker Blue-Gray */
+  color: #455D73; 
 }
 
 .statistic p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
-  color: #455D73; /* Darker Blue-Gray */
+  color: #455D73; 
 }
 
 .statistic-image {
-  width: 100%; /* Make image fill the card width */
-  height: 200px; /* Fixed height for consistency */
-  object-fit: cover; /* Cover the area, cropping if necessary */
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
   margin-top: 1rem;
 }
 
@@ -247,24 +243,72 @@ h2 {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  border: 2px solid #FE5D26; /* Orange border */
+  border: 2px solid #FE5D26; 
 }
 
 .team-member-card h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #455D73; /* Darker Blue-Gray */
+  color: #455D73; 
 }
 
 .team-member-card p {
-  color: #6C7A89; /* A slightly lighter shade of Darker Blue-Gray for sub-text */
+  color: #6C7A89; 
   font-size: 0.95em;
 }
 
-/* Call to Action Sections (Order & Donate) */
+.order-form {
+  background-color: #dde8fd; 
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  max-width: 600px; 
+  margin: 2rem auto 0 auto; 
+  text-align: left; 
+}
+
+.form-group {
+  margin-bottom: 1.5rem; 
+}
+
+.form-group label {
+  display: block; 
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #455D73; 
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #A0BCE0; 
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #455D73; 
+  background-color: #F8F8F8; /
+  box-sizing: border-box;/
+}
+
+.form-group input::placeholder {
+  color: #8898A6; 
+}
+
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23455D73%22%20d%3D%22M287%2C197.3L159.2%2C69.5c-3.2-3.2-8.3-3.2-11.5%2C0L1.7%2C197.3c-3.2%2C3.2-3.2%2C8.3%2C0%2C11.5l11.5%2C11.5c3.2%2C3.2%2C8.3%2C3.2%2C11.5%2C0L144%2C101.7l120.3%2C120.3c3.2%2C3.2%2C8.3%2C3.2%2C11.5%2C0l11.5-11.5C290.2%2C205.6%2C290.2%2C200.5%2C287%2C197.3z%22%2F%3E%3C%2Fsvg%3E'); 
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 12px;
+  padding-right: 2.5rem; 
+}
+
 .cta-section {
   text-align: center;
-  background-color: #B5D3F7; /* Lighter Blue for CTA sections */
+  background-color: #B5D3F7; /
 }
 
 .cta-section p {
@@ -274,8 +318,8 @@ h2 {
 }
 
 .primary-button {
-  background-color: #FE5D26; /* Orange button */
-  color: #FFFFF0; /* Ivory text on button */
+  background-color: #FE5D26; 
+  color: #FFFFF0; 
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
@@ -286,14 +330,13 @@ h2 {
 }
 
 .primary-button:hover {
-  background-color: #FF7F4C; /* A slightly different orange for hover */
+  background-color: #FF7F4C; 
   transform: translateY(-2px);
 }
 
-/* Footer Styling */
 .main-footer {
-  background-color: #455D73; /* Darker Blue-Gray */
-  color: #FFFFF0; /* Ivory */
+  background-color: #455D73; /
+  color: #FFFFF0; 
   padding: 40px 0;
   text-align: center;
 }
@@ -310,7 +353,7 @@ h2 {
 .footer-content p {
   margin-bottom: 20px;
   font-size: 0.9em;
-  color: #FFFFF0; /* Ivory */
+  color: #FFFFF0;
 }
 
 .footer-nav ul {
@@ -327,20 +370,19 @@ h2 {
 }
 
 .footer-nav ul li a {
-  color: #FE5D26; /* Orange for footer links */
-  text-decoration: none; /* No decoration for links */
+  color: #FE5D26; 
+  text-decoration: none; 
   font-size: 0.9em;
   transition: color 0.3s ease;
 }
 
 .footer-nav ul li a:hover {
-  color: #FF7F4C; /* A slightly different orange for hover */
+  color: #FF7F4C; 
 }
 
-/* Section Reveal Animation (Adjusted for horizontal slide) */
 section {
-    opacity: 0; /* Start hidden */
-    transform: translateX(-50px); /* Start slightly off to the left */
+    opacity: 0; 
+    transform: translateX(-50px); 
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
@@ -349,7 +391,6 @@ section.reveal {
     transform: translateX(0);
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
@@ -390,7 +431,7 @@ section.reveal {
   }
 
   .statistics-grid {
-    grid-template-columns: 1fr; /* Stack on smaller screens */
+    grid-template-columns: 1fr; 
   }
 }
 

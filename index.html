@@ -99,6 +99,38 @@
           <p>
           Our <strong>Project Pamphlets</strong> provide comprehensive, easy-to-follow instructions for STEM projects. Enter your institution's information and order your copies today. 
           </p>
+          <form class='order-form'>
+            <div class='form-group'>
+              <label for='teacher-name'>Teacher's Name:</label>
+              <input type='text' id='teacher-name' name='teacherName' required>
+            </div>
+            <div class='form-group'>
+              <label for='school-name'>School Name:</label>
+              <input type='text' id='school-name' name='schoolName' required>
+            </div>
+            <div class='form-group'>
+              <label for='school-address'>School Address:</label>
+              <input type='text' id='school-address' name='schoolAddress' placeholder='Street Address' required>
+              <input type='text' id='school-city' name='schoolCity' placeholder='City' required>
+              <input type='text' id='school-state' name='schoolState' placeholder='State' required>
+              <input type='text' id='school-zip' name='schoolZip' placeholder='Zip Code' required>
+            </div>
+            <div class='form-group'>
+             <label for='teacher-email'>Email Address:</label>
+              <input type='email' id='teacher-email' name='teacherEmail' required>
+            </div>
+            <div class='form-group'>
+              <label for='num-pamphlets'>Number of Pamphlets:</label>
+              <select id='num-pamphlets' name='numPamphlets' required>
+                <option value=''>Select quantity</option>
+                <option value='1-10'>1-10</option>
+                <option value='11-25'>11-25</option>
+                <option value='26-50'>26-50</option>
+                <option value='50+'>50+</option>
+              </select>
+            </div>
+            <button type='submit' class='primary-button'>Submit Order</button>
+          </form>
         </div>
       </section>
 
