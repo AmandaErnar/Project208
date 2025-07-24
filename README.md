@@ -1,3 +1,1 @@
-Elle is a super cool AI-powered robot wind turbine. She's a work in progress, but she's definitely getting there.
-
-Good things are coming for farmers here in Idaho...
+Action group based in Idaho.
