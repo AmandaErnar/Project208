@@ -1,7 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   scroll-behavior: smooth;
   line-height: 1.6;
   color: #FFFFF0; 
@@ -17,7 +16,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(69, 93, 115, 0.95); 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   z-index: 1000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -101,7 +99,7 @@ body {
 
 .hero-section h1 {
   font-size: 7rem; 
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Special Gothic Expanded One", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin-bottom: 20px;
@@ -112,7 +110,7 @@ body {
 
 .hero-section h3 {
   font-size: 2rem;
-  font-family: "Xanh Mono", monospace;
+  font-family: "Roboto Mono", mono;
   font-weight: normal;
   color: #FFFFF0; 
   text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
@@ -126,6 +124,7 @@ body {
 
 #goal {
   background-color: #455d73;
+  font-family: "Special Gothic Expanded One", sans-serif;
 }
 
 #order {
@@ -135,6 +134,7 @@ body {
 
 #order .section-inner p {
   font-size: 1.5rem;
+  font-family: "Roboto Mono", mono;
 }
 
 #order .section-inner h2 {
@@ -179,12 +179,8 @@ body {
 
 .about-content p {
   color: #455d73;
+  font-family: "Roboto Mono", mono;
   font-size: 1.5rem;
-  font-family: 'Xanh Mono', monospace;
-}
-
-.about-content h2 {
-    text-align: left; 
 }
 
 .team-member-card {
@@ -206,7 +202,6 @@ h2, h3 {
 
 h2 {
   font-size: 4rem;
-  font-family: "Roboto Mono", monospace;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -220,7 +215,6 @@ h2 {
 
 .statistic {
   background-color: #DDEBFD;
-  font-family: 'Xanh Mono', monospace;
   padding: 2rem;
   text-align: center; 
 }
@@ -233,7 +227,7 @@ h2 {
 
 .statistic p {
   font-size: 1.1rem;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", mono;
   margin-bottom: 1.5rem;
   color: #455D73; 
 }
@@ -263,12 +257,12 @@ h2 {
 .team-member-card p {
   color: #6C7A89; 
   font-size: 0.95em;
+  font-family: "Roboto Mono", mono;
 }
 
 .order-form {
   background-color: #dde8fd; 
   padding: 3rem;
-  border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   max-width: 600px; 
   margin: 2rem auto 0 auto; 
@@ -292,7 +286,6 @@ h2 {
   width: 100%;
   padding: 0.8rem;
   border: 1px solid #A0BCE0; 
-  border-radius: 4px;
   font-size: 1rem;
   color: #455D73; 
   background-color: #F8F8F8; /
@@ -320,7 +313,6 @@ h2 {
 
 .cta-section p {
     max-width: 700px;
-    font-family: 'Xanh Mono', monospace; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -330,7 +322,6 @@ h2 {
   color: #FFFFF0; 
   padding: 15px 30px;
   border: none;
-  border-radius: 5px;
   font-size: 1.1em;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -343,7 +334,7 @@ h2 {
 }
 
 .main-footer {
-  background-color: #455D73; /
+  background-color: #455D73; 
   color: #FFFFF0; 
   padding: 40px 0;
   text-align: center;
@@ -360,6 +351,7 @@ h2 {
 
 .footer-content p {
   margin-bottom: 20px;
+  font-family: "Roboto Mono", mono;
   font-size: 0.9em;
   color: #FFFFF0;
 }
@@ -427,6 +419,7 @@ section.reveal {
   }
 
   p {
+    font-family: "Roboto Mono", mono;
     font-size: 1em;
   }
 
