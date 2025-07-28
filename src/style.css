@@ -28,8 +28,6 @@ body {
 }
 
 .header-content {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,6 +54,7 @@ body {
 
 .main-nav ul li a {
   color: #FE5D26; 
+  font-family: "Roboto Mono", mono;
   text-decoration: none; 
   font-weight: 500;
   transition: color 0.3s ease;
@@ -138,6 +137,7 @@ body {
 }
 
 #order .section-inner h2 {
+  font-family: "Special Gothic Expanded One", sans-serif;
   font-size: 3.5rem;
   color: #fffff0;
 }
@@ -190,6 +190,28 @@ body {
   transition: transform 0.3s ease;
 }
 
+.team-member-card img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid #FE5D26; 
+}
+
+.team-member-card h3 {
+  font-size: 1.5em;
+  font-family: "Roboto Mono", mono;
+  margin-bottom: 10px;
+  color: #455D73; 
+}
+
+.team-member-card p {
+  color: #6C7A89; 
+  font-size: 0.95em;
+  font-family: "Roboto Mono", mono;
+}
+
 .section-inner {
   max-width: 80rem; 
   margin: 0 auto;
@@ -197,13 +219,15 @@ body {
 }
 
 h2, h3 { 
-  color: #455D73;
+ font-weight: normal;
+ color: #455D73;
 }
 
 h2 {
   font-size: 4rem;
   margin-bottom: 30px;
   text-align: center;
+  font-family: "Special Gothic Expanded One", sans-serif;
 }
 
 .statistics-grid {
@@ -221,6 +245,7 @@ h2 {
 
 .statistic h3 {
   font-size: 2.5rem;
+  font-family: "Special Gothic Expanded One", sans-serif;
   margin-bottom: 1rem;
   color: #455D73; 
 }
@@ -237,27 +262,6 @@ h2 {
   height: 200px; 
   object-fit: cover; 
   margin-top: 1rem;
-}
-
-.team-member-card img {
-  width: 12rem;
-  height: 12rem;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  border: 2px solid #FE5D26; 
-}
-
-.team-member-card h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #455D73; 
-}
-
-.team-member-card p {
-  color: #6C7A89; 
-  font-size: 0.95em;
-  font-family: "Roboto Mono", mono;
 }
 
 .order-form {
@@ -288,8 +292,8 @@ h2 {
   border: 1px solid #A0BCE0; 
   font-size: 1rem;
   color: #455D73; 
-  background-color: #F8F8F8; /
-  box-sizing: border-box;/
+  background-color: #F8F8F8; 
+  box-sizing: border-box;
 }
 
 .form-group input::placeholder {
@@ -308,7 +312,7 @@ h2 {
 
 .cta-section {
   text-align: center;
-  background-color: #B5D3F7; /
+  background-color: #B5D3F7; 
 }
 
 .cta-section p {
@@ -326,6 +330,9 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   margin-top: 20px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 .primary-button:hover {
@@ -372,6 +379,7 @@ h2 {
 .footer-nav ul li a {
   color: #FE5D26; 
   text-decoration: none; 
+  font-family: "Roboto Mono", mono;
   font-size: 0.9em;
   transition: color 0.3s ease;
 }
@@ -382,13 +390,13 @@ h2 {
 
 section {
     opacity: 0; 
-    transform: translateX(-50px); 
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translateY(-50px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
 }
 
 section.reveal {
-    opacity: 1;
-    transform: translateX(0);
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
 @media (max-width: 768px) {
@@ -414,10 +422,6 @@ section.reveal {
     font-size: 1.2em;
   }
 
-  h2 {
-    font-size: 2em;
-  }
-
   p {
     font-family: "Roboto Mono", mono;
     font-size: 1em;
@@ -441,10 +445,6 @@ section.reveal {
     font-size: 1em;
   }
 
-  h2 {
-    font-size: 1.8em;
-  }
-
   .primary-button {
     padding: 12px 25px;
     font-size: 1em;
@@ -453,4 +453,17 @@ section.reveal {
   .footer-nav ul li {
     margin: 0 10px 8px 10px;
   }
+}
+
+::-webkit-scrollbar {
+    width: 14px; 
+    background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FE5D26; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FF7F4C; 
 }
